@@ -5,7 +5,7 @@ type GalleryProductType = {
 }
 
 const Gallery = ({ images }: GalleryProductType) => {
-  const featImage = images[0];
+  // const featImage = images[0];
   const [imageUrl, setImageUrl] = useState(images[0]);
 
   return (
