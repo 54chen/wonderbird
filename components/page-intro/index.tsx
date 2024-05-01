@@ -6,8 +6,18 @@ SwiperCore.use([EffectFade, Navigation]);
 const PageIntro = () => {
 
   return (
-    <section className="page-intro">  
+    <section className="page-intro"> 
       <Swiper navigation effect="fade" className="swiper-wrapper">
+        <SwiperSlide>
+          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/slide-main.jpg')" }}>
+            <div className="container">
+              <div className="page-intro__slide__content">
+                <h2>Wonder Bird Tatto Supply</h2>
+                <h5 className="btn-shop"><i className="icon-right"></i>Hillcrest, Hamilton</h5>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide> 
         <SwiperSlide>
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/slide-1.jpg')" }}>
             <div className="container">

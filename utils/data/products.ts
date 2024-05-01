@@ -1,11 +1,11 @@
 export const products = [
   {
     id: '1',
-    name: 'T-Shirt Summer Vibes',
+    name: 'Tatto Needle',
     price: 119.99,
     discount: 30,
     quantityAvailable: 2,
-    category: 'T-shirt',
+    category: 'Needle',
     currentPrice: 89.99,
     sizes: ['xl', 'l'], 
     colors: ['#000', '6F3E18', '#D4BE8D', '#FFF'],
