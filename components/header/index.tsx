@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import useOnClickOutside from 'use-onclickoutside';
 import Logo from '../../assets/icons/logo';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { RootState } from 'store';
+// import { RootState } from 'store';
 
 type HeaderType = {
   isErrorPage?: Boolean;
@@ -12,12 +12,12 @@ type HeaderType = {
 
 const Header = ({ isErrorPage }: HeaderType) => {
   const router = useRouter();
-  const { cartItems } = useSelector((state: RootState)  => state.cart);
+  // const { cartItems } = useSelector((state: RootState)  => state.cart);
   const arrayPaths = ['/'];  
 
   const [onTop, setOnTop] = useState(( !arrayPaths.includes(router.pathname) || isErrorPage ) ? false : true);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
+  // const [searchOpen, setSearchOpen] = useState(false);
   const navRef = useRef(null);
   const searchRef = useRef(null);
 
@@ -45,7 +45,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
   }
 
   const closeSearch = () => {
-    setSearchOpen(false);
+    // setSearchOpen(false);
   }
 
   // on click outside
