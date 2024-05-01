@@ -2,7 +2,7 @@ export const products = [
   {
     id: '1',
     name: 'Tatto Needle',
-    price: 119.99,
+    price: 110,
     discount: 30,
     quantityAvailable: 2,
     category: 'Needle',
