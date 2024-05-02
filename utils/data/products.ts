@@ -64,7 +64,7 @@ export const products = [
   {
     id: '2',
     name: 'T-Shirt Summer Vibes',
-    price: 119.99,
+    price: 88.99,
     quantityAvailable: 2,
     category: 'T-shirt',
     currentPrice: 89.99,
@@ -123,9 +123,9 @@ export const products = [
   {
     id: '3',
     name: 'T-Shirt Summer Vibes',
-    price: 119.99,
+    price: 88.99,
     quantityAvailable: 2,
-    category: 'T-shirt',
+    category: 'dogshirt',
     currentPrice: 89.99,
     sizes: ['xl', 'l'], 
     colors: ['#000', '6F3E18', '#D4BE8D', '#FFF'],
