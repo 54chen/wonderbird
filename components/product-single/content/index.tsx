@@ -15,17 +15,15 @@ const Content = ({ product }: ProductContent) => {
         <h2 className="product__name">{product.name}</h2>
 
         <div className="product__prices">
-          <h4>${ product.currentPrice }</h4>
+          <h4>{ product.price }</h4>
           {product.discount &&
-            <span>${ product.price }</span>
+            <span>{ product.price }</span>
           }
         </div>
       </div>
 
       <div className="product-content__filters">
-       
-      { product.description }
-        
+      <p dangerouslySetInnerHTML={{ __html: product.description.replaceAll('/n', '<br/><br/>') }}></p>        
       </div>
     </section>
   );
