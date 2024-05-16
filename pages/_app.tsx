@@ -28,4 +28,4 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
   </Fragment>
 );
 
-export default wrapper.withRedux(MyApp);
+export default MyApp;

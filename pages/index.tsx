@@ -6,7 +6,7 @@ import Subscribe from '../components/subscribe';
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout title='Wonderbird Tattoo Supply'>
       <PageIntro />
 
       <section className="featured">
