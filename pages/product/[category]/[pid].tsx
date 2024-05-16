@@ -11,22 +11,12 @@ import path from 'path';
 // types
 import { ProductType } from 'types';
 
-type ProductPageType = {
-  product: ProductType;
-}
-
 interface Info {
   title: string;
   price: string;
   desc: string;
   images: string[];
 }
-
-interface DirectoryPageProps {
-  info: Info;
-}
-
-
  
 export const getStaticPaths: GetStaticPaths = async () => {
   const imagesDir = path.join(process.cwd(), 'public/images/tattoo');
