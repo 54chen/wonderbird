@@ -31,9 +31,9 @@ const ProductsCarousel = ({ products }: ProductsCarouselType) => {
     <div className="products-carousel">
       <Swiper 
       spaceBetween={spaceBetween} 
-      loop={true} 
+      loop={false} 
       centeredSlides={centeredSlides} 
-      watchOverflow={true} 
+      watchOverflow={false} 
       slidesPerView={slidesPerView} 
       className="swiper-wrapper">
         {products.map(item => (
