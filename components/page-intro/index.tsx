@@ -47,7 +47,7 @@ const PageIntro = () => {
             <li>
               <i className="icon-shipping"></i>
               <div className="data-item__content">
-                <h4>Free Shipping</h4>
+                <h4>Free Ship</h4>
                 <p>On purchases over $199</p>
               </div>
             </li>
