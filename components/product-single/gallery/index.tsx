@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 type GalleryProductType = {
   images: string[]
@@ -7,7 +7,9 @@ type GalleryProductType = {
 const Gallery = ({ images }: GalleryProductType) => {
   // const featImage = images[0];
   const [imageUrl, setImageUrl] = useState(images[0]);
-
+  useEffect(() => {
+    setImageUrl(images[0]);
+  }, images);
   return (
     <section className="product-gallery">
       <div className="product-gallery__thumbs">
