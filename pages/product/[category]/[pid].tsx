@@ -9,7 +9,7 @@ import fs from 'fs';
 import path from 'path';
 
 // types
-import { ProductType, MultiplePrice } from 'types';
+import { ProductType, MultiplePrice, ProductLists, ProductTypeList } from 'types';
 
 interface Info {
   title: string;
@@ -18,6 +18,12 @@ interface Info {
   images: string[];
   price2?: MultiplePrice | null;
 }
+
+interface SelectedProduct {
+  category: string;
+  pid: string;
+}
+
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const imagesDir = path.join(process.cwd(), 'public/images/tattoo');
@@ -46,6 +52,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
+
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { category, pid } = params as { category: string; pid: string };
   const dirPath = path.join(process.cwd(), 'public/images/tattoo', category, pid);
@@ -63,18 +70,45 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     .map(file => `/images/tattoo/${category}/${pid}/${file}`);
 
   info.images = images;
-  const product: ProductType = { id: pid, category: `${category}/${pid}`, name: info.title, thumb: info.images[0] || '', price: info.price, price2: info.price2||null, count: 1, color: 'black', size: 'M', images: info.images, currentPrice: 0, description: info.desc, punctuation: { countOpinions: 0, punctuation: 0, votes: [] }, reviews: [] };
+  const product: ProductType = { id: pid, category: `${category}/${pid}`, name: info.title, thumb: info.images[0] || '', price: info.price, price2: info.price2 || null, count: 1, color: 'black', size: 'M', images: info.images, currentPrice: 0, description: info.desc, punctuation: { countOpinions: 0, punctuation: 0, votes: [] }, reviews: [] };
+  
+  const getFeaturedProducts = async () => {
+    const dirPath = path.join(process.cwd(), 'public/images/tattoo',);
+    const infoPath = path.join(dirPath, 'selected.json');
+    if (!fs.existsSync(infoPath)) {
+      return {
+        notFound: true,
+      };
+    }
+    const content = fs.readFileSync(infoPath, 'utf8');
+    const dirs: SelectedProduct[] = JSON.parse(content);
+  
+    const tattoos: ProductLists = dirs.map(({ category, pid }) => {
+      const infoPath = path.join(dirPath, category, pid, 'info.json');
+      const info = JSON.parse(fs.readFileSync(infoPath, 'utf-8'));
+  
+      const images = fs.readdirSync(path.join(dirPath, category, pid)).filter((file) =>
+        file.endsWith('.jpg') || file.endsWith('.webp')
+      );
+      const single: ProductTypeList = { id: pid, color: '', name: info.title, currentPrice: info.price, price: info.price, category: category, images: [`/images/tattoo/${category}/${pid}/${images[0]}`] };
+      return single;
+    });
+    return tattoos;
+  };
 
+  
+  const featuredProducts = await getFeaturedProducts();
   return {
     props: {
       product,
+      featuredProducts
     },
   };
 };
 
 
 
-const Product = ({ product }: { product: ProductType }) => {
+const Product = ({ product, featuredProducts }: { product: ProductType, featuredProducts: ProductLists }) => {
 
   return (
     <Layout>
@@ -92,7 +126,7 @@ const Product = ({ product }: { product: ProductType }) => {
       </section>
 
       <div className="product-single-page">
-        <ProductsFeatured />
+        <ProductsFeatured data={featuredProducts} />
       </div>
       <Footer />
     </Layout>

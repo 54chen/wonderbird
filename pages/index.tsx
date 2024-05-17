@@ -3,8 +3,56 @@ import PageIntro from '../components/page-intro';
 import ProductsFeatured from '../components/products-featured';
 import Footer from '../components/footer';
 import Subscribe from '../components/subscribe';
+import { GetStaticProps } from 'next';
+import fs from 'fs';
+import path from 'path';
 
-const IndexPage = () => {
+// types
+import { ProductLists, ProductTypeList } from 'types';
+
+interface SelectedProduct {
+  category: string;
+  pid: string;
+}
+
+
+ 
+export const getStaticProps: GetStaticProps = async ({}) => {
+   
+  const getFeaturedProducts = async () => {
+    const dirPath = path.join(process.cwd(), 'public/images/tattoo',);
+    const infoPath = path.join(dirPath, 'selected.json');
+    if (!fs.existsSync(infoPath)) {
+      return {
+        notFound: true,
+      };
+    }
+    const content = fs.readFileSync(infoPath, 'utf8');
+    const dirs: SelectedProduct[] = JSON.parse(content);
+  
+    const tattoos: ProductLists = dirs.map(({ category, pid }) => {
+      const infoPath = path.join(dirPath, category, pid, 'info.json');
+      const info = JSON.parse(fs.readFileSync(infoPath, 'utf-8'));
+  
+      const images = fs.readdirSync(path.join(dirPath, category, pid)).filter((file) =>
+        file.endsWith('.jpg') || file.endsWith('.webp')
+      );
+      const single: ProductTypeList = { id: pid, color: '', name: info.title, currentPrice: info.price, price: info.price, category: category, images: [`/images/tattoo/${category}/${pid}/${images[0]}`] };
+      return single;
+    });
+    return tattoos;
+  };
+  const featuredProducts = await getFeaturedProducts();
+  return {
+    props: {
+      featuredProducts
+    },
+  };
+};
+
+
+
+const IndexPage = ({featuredProducts}:{featuredProducts:ProductLists}) => {
   return (
     <Layout title='Wonderbird Tattoo Supply'>
       <PageIntro />
@@ -77,7 +125,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <ProductsFeatured />
+      <ProductsFeatured data={featuredProducts}/>
       <Subscribe />
       <Footer />
     </Layout>
