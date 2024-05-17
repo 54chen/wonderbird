@@ -9,15 +9,16 @@ import fs from 'fs';
 import path from 'path';
 
 // types
-import { ProductType } from 'types';
+import { ProductType, MultiplePrice } from 'types';
 
 interface Info {
   title: string;
   price: string;
   desc: string;
   images: string[];
+  price2?: MultiplePrice | null;
 }
- 
+
 export const getStaticPaths: GetStaticPaths = async () => {
   const imagesDir = path.join(process.cwd(), 'public/images/tattoo');
   const categories = fs.readdirSync(imagesDir).filter(file =>
@@ -62,7 +63,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     .map(file => `/images/tattoo/${category}/${pid}/${file}`);
 
   info.images = images;
-  const product: ProductType = {id: pid, category:`${category}/${pid}`, name: info.title, thumb: info.images[0]||'', price: info.price, count: 1, color: 'black', size: 'M', images: info.images, currentPrice: 0, description: info.desc, punctuation: {countOpinions: 0, punctuation: 0, votes: []}, reviews: []};
+  const product: ProductType = { id: pid, category: `${category}/${pid}`, name: info.title, thumb: info.images[0] || '', price: info.price, price2: info.price2||null, count: 1, color: 'black', size: 'M', images: info.images, currentPrice: 0, description: info.desc, punctuation: { countOpinions: 0, punctuation: 0, votes: [] }, reviews: [] };
 
   return {
     props: {
@@ -77,7 +78,7 @@ const Product = ({ product }: { product: ProductType }) => {
 
   return (
     <Layout>
-      <Breadcrumb category={product.category}/>
+      <Breadcrumb category={product.category} />
 
       <section className="product-single">
         <div className="container">
@@ -86,7 +87,7 @@ const Product = ({ product }: { product: ProductType }) => {
             <Content product={product} />
           </div>
 
-          
+
         </div>
       </section>
 

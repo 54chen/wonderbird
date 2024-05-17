@@ -15,6 +15,10 @@ export type ReviewType = {
   description: string;
   punctuation: number;
 }
+export type MultiplePrice = {
+  category:string;
+  price: string;
+}[]
 
 export type ProductType = {
   id: string;
@@ -31,6 +35,7 @@ export type ProductType = {
   reviews: ReviewType[];
   description: string;
   category: string;
+  price2: MultiplePrice | undefined | null;
 }
 
 export type ProductTypeList = {
