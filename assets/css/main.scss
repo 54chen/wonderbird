@@ -945,6 +945,7 @@ h1,h2,h3,h4,h5 {
 
 .subscribe {
   .subscribe__content {
+    cursor: pointer;
     padding: 35px 20px;
     background-color: #FAFAFA;
     background-repeat: no-repeat;
@@ -952,10 +953,10 @@ h1,h2,h3,h4,h5 {
     position: relative;
     background-position: center;
     @include breakpoint(phone) {
-      padding: 40px 60px 40px 60px;
+      padding: 140px 60px 140px 60px;
     }
     @include breakpoint(tablet-lg) {
-      padding: 80px 125px 80px 105px;
+      padding: 280px 125px 280px 105px;
       display: flex;
       align-items: center;
     }

@@ -59,12 +59,12 @@ const Header = ({ isErrorPage }: HeaderType) => {
           <a><h1 className="site-logo"><Logo />Tattoo Supply</h1></a>
         </Link>
         <nav ref={navRef} className={`site-nav ${menuOpen ? 'site-nav--open' : ''}`}>
-          <Link href="/products">
+          <Link href="/products/">
             <a>Tattoo Needles</a>
           </Link>
           <a href="#">Tattoo Ink</a>
-          <a href="#">New Arrivals</a>
-          <button className="site-nav__btn"><p>Account</p></button>
+          <a href="#">Tattoo Supply</a>
+          <a href="#">Tattoo Machine</a>          
         </nav>
 
         <div className="site-header__actions">

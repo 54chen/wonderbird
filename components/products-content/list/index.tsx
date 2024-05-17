@@ -9,7 +9,10 @@ const ProductsContent = () => {
 
   if (error) return <div>Failed to load users</div>;
   return (
-    <>
+    <> 
+    <div className="products-content__intro">
+      <h2>Men's Tops <span>(133)</span></h2>        
+    </div>
       {!data && 
         <ProductsLoading />
       }
