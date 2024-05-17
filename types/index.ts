@@ -30,6 +30,7 @@ export type ProductType = {
   punctuation: PunctuationType;
   reviews: ReviewType[];
   description: string;
+  category: string;
 }
 
 export type ProductTypeList = {
@@ -40,7 +41,11 @@ export type ProductTypeList = {
   images: string[];
   discount?: string;
   currentPrice?: number;
+  category: string;
 }
+
+export type ProductLists = ProductTypeList[]
+
 
 export type ProductStoreType = {
   id: string;

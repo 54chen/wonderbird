@@ -13,16 +13,16 @@ type HeaderType = {
 const Header = ({ isErrorPage }: HeaderType) => {
   const router = useRouter();
   // const { cartItems } = useSelector((state: RootState)  => state.cart);
-  const arrayPaths = ['/'];  
+  const arrayPaths = ['/'];
 
-  const [onTop, setOnTop] = useState(( !arrayPaths.includes(router.pathname) || isErrorPage ) ? false : true);
+  const [onTop, setOnTop] = useState((!arrayPaths.includes(router.pathname) || isErrorPage) ? false : true);
   const [menuOpen, setMenuOpen] = useState(false);
   // const [searchOpen, setSearchOpen] = useState(false);
   const navRef = useRef(null);
   const searchRef = useRef(null);
 
   const headerClass = () => {
-    if(window.pageYOffset === 0) {
+    if (window.pageYOffset === 0) {
       setOnTop(true);
     } else {
       setOnTop(false);
@@ -30,12 +30,12 @@ const Header = ({ isErrorPage }: HeaderType) => {
   }
 
   useEffect(() => {
-    if(!arrayPaths.includes(router.pathname) || isErrorPage) {
+    if (!arrayPaths.includes(router.pathname) || isErrorPage) {
       return;
     }
 
     headerClass();
-    window.onscroll = function() {
+    window.onscroll = function () {
       headerClass();
     };
   }, []);
@@ -52,19 +52,25 @@ const Header = ({ isErrorPage }: HeaderType) => {
   useOnClickOutside(navRef, closeMenu);
   useOnClickOutside(searchRef, closeSearch);
 
-  return(
+  return (
     <header className={`site-header ${!onTop ? 'site-header--fixed' : ''}`}>
       <div className="container">
         <Link href="/">
           <a><h1 className="site-logo"><Logo />Tattoo Supply</h1></a>
         </Link>
         <nav ref={navRef} className={`site-nav ${menuOpen ? 'site-nav--open' : ''}`}>
-          <Link href="/products/">
+          <Link href="/product/needle">
             <a>Tattoo Needles</a>
           </Link>
-          <a href="#">Tattoo Ink</a>
-          <a href="#">Tattoo Supply</a>
-          <a href="#">Tattoo Machine</a>          
+          <Link href="/product/ink">
+            <a>Tattoo Ink</a>
+          </Link>
+          <Link href="/product/supply">
+            <a>Tattoo Supply</a>
+          </Link>
+          <Link href="/product/machine">
+            <a>Tattoo Machine</a>
+          </Link>
         </nav>
 
         <div className="site-header__actions">
@@ -86,8 +92,8 @@ const Header = ({ isErrorPage }: HeaderType) => {
           <Link href="/login">
             <button className="site-header__btn-avatar"><i className="icon-avatar"></i></button>
           </Link> */}
-          <button 
-            onClick={() => setMenuOpen(true)} 
+          <button
+            onClick={() => setMenuOpen(true)}
             className="site-header__btn-menu">
             <i className="btn-hamburger"><span></span></i>
           </button>

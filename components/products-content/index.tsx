@@ -1,9 +1,10 @@
+import { ProductLists } from 'types';
 import List from './list';
 
-const ProductsContent = () => {  
+const ProductsContent = ({category, data}: { category:string, data:ProductLists }) => {  
   return (
     <section className="products-content">
-      <List />
+      <List category={category} data={data} />
     </section>
   );
 };

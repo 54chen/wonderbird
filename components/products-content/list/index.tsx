@@ -1,17 +1,12 @@
-import useSwr from 'swr';
 import ProductItem from '../../product-item';
 import ProductsLoading from './loading';
-import { ProductTypeList } from 'types';
+import { ProductLists, ProductTypeList } from 'types';
 
-const ProductsContent = () => {
-  const fetcher = (url: string) => fetch(url).then((res) => res.json());
-  const { data, error } = useSwr('/api/products', fetcher);
-
-  if (error) return <div>Failed to load users</div>;
+const ProductsContent = ({category, data}:{category: string, data: ProductLists}) => {
   return (
     <> 
     <div className="products-content__intro">
-      <h2>Men's Tops <span>(133)</span></h2>        
+      <h2>{category} <span>({data.length})</span></h2>        
     </div>
       {!data && 
         <ProductsLoading />
@@ -28,6 +23,7 @@ const ProductsContent = () => {
               currentPrice={item.currentPrice}
               key={item.id}
               images={item.images} 
+              category={category}
             />
           ))}
         </section>
