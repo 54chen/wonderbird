@@ -55,7 +55,7 @@ const PageIntro = () => {
             <li>
               <i className="icon-shipping"></i>
               <div className="data-item__content">
-                <h4>99% Satisfied Customers</h4>
+                <h4>100% Satisfied Customers</h4>
                 <p>Our clients' opinions speak for themselves</p>
               </div>
             </li>
