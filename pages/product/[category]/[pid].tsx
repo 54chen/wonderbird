@@ -66,7 +66,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const info: Info = JSON.parse(content);
 
   const images = fs.readdirSync(dirPath)
-    .filter(file => file.endsWith('.jpg') || file.endsWith('.webp'))
+    .filter(file => file.endsWith('.jpg') || file.endsWith('.webp') || file.endsWith('.png')) 
     .map(file => `/images/tattoo/${category}/${pid}/${file}`);
 
   info.images = images;
