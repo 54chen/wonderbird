@@ -38,7 +38,7 @@ const PageIntro = () => {
         <SwiperSlide>
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/TKSLARGE1.jpg')" }}>
             <div className="container">
-              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/thekingssword20RL')}>
+              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/athekingssword20RL')}>
               {/* <h2>Wonder Bird Tatto Supply</h2> */}
                 {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
               </div>
