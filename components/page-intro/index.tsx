@@ -9,32 +9,43 @@ const PageIntro = () => {
     <section className="page-intro"> 
       <Swiper navigation effect="fade" className="swiper-wrapper">
         <SwiperSlide>
-          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/slide-main.jpg')" }}>
+          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/ad-1.webp')" }}>
             <div className="container">
               <div className="page-intro__slide__content">
                 <h2>Wonder Bird Tatto Supply</h2>
-                <h5 className="btn-shop"><i className="icon-right"></i>Hillcrest, Hamilton</h5>
+                {/* <h5 className="btn-shop"><i className="icon-right"></i>Hillcrest, Hamilton</h5> */}
               </div>
             </div>
           </div>
         </SwiperSlide> 
         <SwiperSlide>
-          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/slide-1.jpg')" }}>
+          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/CNCLARGE.webp')" }}>
             <div className="container">
               <div className="page-intro__slide__content">
-                <h2>Sale of the summer collection</h2>
-                <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a>
+              <h2>Wonder Bird Tatto Supply</h2>
+                {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
               </div>
             </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/slide-2.jpg')" }}>
+          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/QUELLELARGE2.jpg')" }}>
             <div className="container">
               <div className="page-intro__slide__content">
-                <h2>Make your house into a home</h2>
-                <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a>
+              <h2>Wonder Bird Tatto Supply</h2>
+                {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/TKSLARGE1.jpg')" }}>
+            <div className="container">
+              <div className="page-intro__slide__content">
+              <h2>Wonder Bird Tatto Supply</h2>
+                {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
               </div>
             </div>
           </div>
