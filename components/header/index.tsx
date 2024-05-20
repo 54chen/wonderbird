@@ -63,7 +63,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
             <a>Tattoo Machine</a>
           </Link>
           <Link href="/product/needle">
-            <a>Tattoo Cartriages</a>
+            <a>Cartriages</a>
           </Link>
           <Link href="/product/ink">
             <a>Tattoo Ink</a>
