@@ -12,7 +12,7 @@ const PageIntro = () => {
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/ad-1.webp')" }}>
             <div className="container">
               <div className="page-intro__slide__content">
-                <h2>Wonder Bird Tatto Supply</h2>
+                {/* <h2>Wonder Bird Tatto Supply</h2> */}
                 {/* <h5 className="btn-shop"><i className="icon-right"></i>Hillcrest, Hamilton</h5> */}
               </div>
             </div>
@@ -22,7 +22,7 @@ const PageIntro = () => {
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/CNCLARGE.webp')" }}>
             <div className="container">
               <div className="page-intro__slide__content">
-              <h2>Wonder Bird Tatto Supply</h2>
+              {/* <h2>Wonder Bird Tatto Supply</h2> */}
                 {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
               </div>
             </div>
@@ -33,7 +33,7 @@ const PageIntro = () => {
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/QUELLELARGE2.jpg')" }}>
             <div className="container">
               <div className="page-intro__slide__content">
-              <h2>Wonder Bird Tatto Supply</h2>
+              {/* <h2>Wonder Bird Tatto Supply</h2> */}
                 {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
               </div>
             </div>
@@ -44,7 +44,7 @@ const PageIntro = () => {
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/TKSLARGE1.jpg')" }}>
             <div className="container">
               <div className="page-intro__slide__content">
-              <h2>Wonder Bird Tatto Supply</h2>
+              {/* <h2>Wonder Bird Tatto Supply</h2> */}
                 {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
               </div>
             </div>
