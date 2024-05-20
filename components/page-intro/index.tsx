@@ -26,7 +26,7 @@ const PageIntro = () => {
         <SwiperSlide>
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/CNCLARGE.webp')" }}>
             <div className="container">
-              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/en05s20RL')}>
+              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/cnc20RL')}>
               {/* <h2>Wonder Bird Tatto Supply</h2> */}
                 {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
               </div>
@@ -34,21 +34,11 @@ const PageIntro = () => {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/QUELLELARGE2.jpg')" }}>
-            <div className="container">
-              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/en05s20RL')}>
-              {/* <h2>Wonder Bird Tatto Supply</h2> */}
-                {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
 
         <SwiperSlide>
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/TKSLARGE1.jpg')" }}>
             <div className="container">
-              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/en05s20RL')}>
+              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/thekingssword20RL')}>
               {/* <h2>Wonder Bird Tatto Supply</h2> */}
                 {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
               </div>
