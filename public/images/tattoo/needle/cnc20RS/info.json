@@ -1,5 +1,33 @@
 
 {
   "title": "CNC Police Tattoo Needle Cartridges Round Shader/ RS 20PCS", 
-  "price": "$89.95",
-  "desc": "A New Generation Tattoo Needle from CNC® has arrived. CNC POLICE Tattoo Needle offers ink flow, consistency, and protection.  CNC® Tattoo Supply is a leading provider of tattoo equipment, we always follow the strict rule for all the products we provide to tattoo artists. CNC Tattoo Needle Cartridges have these features./nFeatures/nUnique & industry-first feature, the tattoo cartridge finger ledge gives you the perfect place to rest your finger while working./nGive artist finger extra comfort, less finger fatigue and absorbs those damaging vibrations while tattooing./nCNC Tattoo Cartridges meet the highest standards of hygiene, protecting you and your customers./nTransparent housing for optimal visibility, a membrane mechanism to prevent ink backflow./nOne-piece tattoo needle over-mold for total stability./nSafety membrane drive system. Protect your tattoo machine with balanced resistance./nSuitable for most tattoo machine brands on the market./nMore than 120 popular configurations meet all your tattoo work needs./nParameters/nConfiguration: Round Shader / RS/nTaper: M (3.5mm)/nNeedle Diameter: 0.30 mm(starts with 10) – 0.35mm (starts with 12)/nBox Quantity: 20 cartridges/nColor: Red Transparent Tip/nMold: Single-mould casing/nHygiene standard: Medical-grade plastic tips/nSuitability: Compatible with cartridge grips and most brand machines on the market."}
+  "price": "NZ$23.67-NZ$29.98",
+  "desc": "A New Generation Tattoo Needle from CNC has arrived. CNC POLICE Tattoo Needle offers ink flow, consistency, and protection.  CNC Tattoo Supply is a leading provider of tattoo equipment, we always follow the strict rule for all the products we provide to tattoo artists. CNC Tattoo Needle Cartridges have these features./nFeatures/nUnique & industry-first feature, the tattoo cartridge finger ledge gives you the perfect place to rest your finger while working./nGive artist finger extra comfort, less finger fatigue and absorbs those damaging vibrations while tattooing./nCNC Tattoo Cartridges meet the highest standards of hygiene, protecting you and your customers./nTransparent housing for optimal visibility, a membrane mechanism to prevent ink backflow./nOne-piece tattoo needle over-mold for total stability./nSafety membrane drive system. Protect your tattoo machine with balanced resistance./nSuitable for most tattoo machine brands on the market./nMore than 120 popular configurations meet all your tattoo work needs./nParameters/nConfiguration: Round Shader / RS/nTaper: M (3.5mm)/nNeedle Diameter: 0.30 mm(starts with 10) – 0.35mm (starts with 12)/nBox Quantity: 20 cartridges/nColor: Red Transparent Tip/nMold: Single-mould casing/nHygiene standard: Medical-grade plastic tips/nSuitability: Compatible with cartridge grips and most brand machines on the market.",
+   "price2": [
+    {
+      "category": "1203RS",
+      "price": "NZ$23.67"
+    },
+    {
+      "category": "1205RS",
+      "price": "NZ$23.67"
+    },
+    {
+      "category": "1207RS",
+      "price": "NZ$25.34"
+    },
+    {
+      "category": "1209RS",
+      "price": "NZ$25.34"
+    },
+    {
+      "category": "1211RS",
+      "price": "NZ$29.98"
+    },
+    {
+      "category": "1214RS",
+      "price": "NZ$29.98"
+    }
+  ]
+}
+
