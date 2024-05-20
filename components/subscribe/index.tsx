@@ -5,7 +5,7 @@ const Subscribe = () => {
     <section className="subscribe">
       <div className="container">
       <Link href="/product/needle">
-        <div style={{backgroundImage: 'url(/images/ad-1.webp)'}} className="subscribe__content" />   
+        <div style={{backgroundImage: 'url(/images/QUELLELARGE2.jpg)'}} className="subscribe__content" />   
       </Link>
       </div>
     </section>

@@ -956,10 +956,10 @@ h1,h2,h3,h4,h5 {
     position: relative;
     background-position: center;
     @include breakpoint(phone) {
-      padding: 140px 60px 140px 60px;
+      padding: 340px 60px 340px 60px;
     }
     @include breakpoint(tablet-lg) {
-      padding: 280px 125px 280px 105px;
+      padding: 580px 125px 580px 105px;
       display: flex;
       align-items: center;
     }
