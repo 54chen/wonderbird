@@ -5,7 +5,7 @@ const Subscribe = () => {
     <section className="subscribe">
       <div className="container">
       <Link href="/product/needle">
-         <img src="/images/QUELLELARGE2.jpg" />
+         <img src="/images/QUELLELARGE2.jpg" width="80%"/>
       </Link>
       </div>
     </section>
