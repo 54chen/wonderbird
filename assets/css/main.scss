@@ -647,6 +647,7 @@ h1,h2,h3,h4,h5 {
     .page-intro__slide__content {
       margin-top: auto;
       margin-bottom: 40px;
+      cursor: pointer;
       @include breakpoint(phone) {
         margin-bottom: 80px;
         margin-top: 0;

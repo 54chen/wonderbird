@@ -1,17 +1,22 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {EffectFade, Navigation} from 'swiper';
+import { useRouter } from 'next/router';
 
 SwiperCore.use([EffectFade, Navigation]);
 
 const PageIntro = () => {
+  const router = useRouter();
 
+  const handleClick = (url: string) => {
+    router.push(url);
+    };
   return (
     <section className="page-intro"> 
       <Swiper navigation effect="fade" className="swiper-wrapper">
         <SwiperSlide>
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/ad-1.webp')" }}>
             <div className="container">
-              <div className="page-intro__slide__content">
+              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/en05s20RL')}>
                 {/* <h2>Wonder Bird Tatto Supply</h2> */}
                 {/* <h5 className="btn-shop"><i className="icon-right"></i>Hillcrest, Hamilton</h5> */}
               </div>
@@ -21,7 +26,7 @@ const PageIntro = () => {
         <SwiperSlide>
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/CNCLARGE.webp')" }}>
             <div className="container">
-              <div className="page-intro__slide__content">
+              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/en05s20RL')}>
               {/* <h2>Wonder Bird Tatto Supply</h2> */}
                 {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
               </div>
@@ -32,7 +37,7 @@ const PageIntro = () => {
         <SwiperSlide>
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/QUELLELARGE2.jpg')" }}>
             <div className="container">
-              <div className="page-intro__slide__content">
+              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/en05s20RL')}>
               {/* <h2>Wonder Bird Tatto Supply</h2> */}
                 {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
               </div>
@@ -43,7 +48,7 @@ const PageIntro = () => {
         <SwiperSlide>
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/TKSLARGE1.jpg')" }}>
             <div className="container">
-              <div className="page-intro__slide__content">
+              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/en05s20RL')}>
               {/* <h2>Wonder Bird Tatto Supply</h2> */}
                 {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
               </div>
@@ -52,7 +57,7 @@ const PageIntro = () => {
         </SwiperSlide>
       </Swiper>
 
-      <div className="shop-data">
+      {/* <div className="shop-data">
         <div className="container">
           <ul className="shop-data__items">
             <li>
@@ -80,7 +85,7 @@ const PageIntro = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 };
