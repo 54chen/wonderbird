@@ -24,7 +24,7 @@ const PageIntro = () => {
           </div>
         </SwiperSlide> 
         <SwiperSlide>
-          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/CNCLARGE.webp')" }}>
+          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/tattoo/CNCLARGE.jpg')" }}>
             <div className="container">
               <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/cnc20RL')}>
               {/* <h2>Wonder Bird Tatto Supply</h2> */}
