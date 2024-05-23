@@ -7,44 +7,36 @@ SwiperCore.use([EffectFade, Navigation]);
 const PageIntro = () => {
   const router = useRouter();
 
-  const handleClick = (url: string) => {
+  // const handleClick = (url: string) => () => {
+  //   console.log('url', url);
+  //   // router.push(url);
+  //   };
+
+  const slides = [
+    { id: 1, url: '/product/needle/en05s20RL', imgSrc: '/images/ad-1.webp' },
+    { id: 2, url: '/product/needle/cnc20RL', imgSrc: '/images/tattoo/CNCLARGE.jpg' },
+    { id: 3, url: '/product/needle/athekingssword20RL', imgSrc: '/images/TKSLARGE1.jpg' }
+  ];
+
+  const handleSlideClick = (url:string) => {
     router.push(url);
-    };
+  };
+
   return (
+
     <section className="page-intro"> 
-      <Swiper navigation effect="fade" className="swiper-wrapper">
-        <SwiperSlide>
-          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/ad-1.webp')" }}>
-            <div className="container">
-              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/en05s20RL')}>
-                {/* <h2>Wonder Bird Tatto Supply</h2> */}
-                {/* <h5 className="btn-shop"><i className="icon-right"></i>Hillcrest, Hamilton</h5> */}
-              </div>
-            </div>
-          </div>
-        </SwiperSlide> 
-        <SwiperSlide>
-          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/tattoo/CNCLARGE.jpg')" }}>
-            <div className="container">
-              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/cnc20RL')}>
-              {/* <h2>Wonder Bird Tatto Supply</h2> */}
-                {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
 
-
-        <SwiperSlide>
-          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/TKSLARGE1.jpg')" }}>
+      <Swiper navigation effect="coverflow" loop={true} className="swiper-wrapper">
+      {slides.map((slide) => (
+        <SwiperSlide key={slide.id}>
+          <div key={slide.id} className="page-intro__slide" style={{ backgroundImage: "url("+slide.imgSrc+")"}}  onClick={()=>handleSlideClick(slide.url)}>
             <div className="container">
-              <div className="page-intro__slide__content" onClick={()=>handleClick('/product/needle/athekingssword20RL')}>
-              {/* <h2>Wonder Bird Tatto Supply</h2> */}
-                {/* <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a> */}
+              <div className="page-intro__slide__content">
               </div>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide>  
+      ))}
       </Swiper>
 
       {/* <div className="shop-data">
