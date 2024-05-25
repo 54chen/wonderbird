@@ -414,7 +414,11 @@ h1,h2,h3,h4,h5 {
     }
   }
 }
-
+.test{
+  border: #000 1px solid;
+  width: 100px;
+  height: 100px;
+}
 .search-form-wrapper {
   position: relative;
   z-index: 5000;
@@ -488,7 +492,9 @@ h1,h2,h3,h4,h5 {
     }
   }
 }
-
+.swiper-slide {
+  display: block;
+}
 .page-intro {
   position: relative;
   .swiper-button-prev, .swiper-button-next {
