@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {EffectFade, Navigation} from 'swiper';
 import { useRouter } from 'next/router';
+import { link } from 'fs';
 
 SwiperCore.use([EffectFade, Navigation]);
 
@@ -13,9 +14,9 @@ const PageIntro = () => {
   //   };
 
   const slides = [
-    { id: 1, url: '/product/needle/en05s20RL', imgSrc: '/images/TKSLARGE1.jpg' },
-    { id: 2, url: '/product/needle/cnc20RL', imgSrc: '/images/tattoo/HAWINK.webp' },
-    { id: 3, url: '/product/needle/athekingssword20RL', imgSrc: '/images/PRINTER.webp' }
+    { id: 1, url: '/product/needle/en05s20RL', imgSrc: '/images/TKSLARGE1.jpg', desc: 'Special New Arrival',link: 'Shop Now' },
+    { id: 2, url: '/product/needle/cnc20RL', imgSrc: '/images/tattoo/HAWINK.webp', desc: '', link:'' },
+    { id: 3, url: '/product/needle/athekingssword20RL', imgSrc: '/images/PRINTER.webp', desc: '', link:'' }
   ];
 
   const handleSlideClick = (url:string) => {
@@ -32,6 +33,8 @@ const PageIntro = () => {
           <div key={slide.id} className="page-intro__slide" style={{ backgroundImage: "url("+slide.imgSrc+")"}}  onClick={()=>handleSlideClick(slide.url)}>
             <div className="container">
               <div className="page-intro__slide__content">
+                <h2>{slide.desc}</h2>
+                <a href={slide.url} className="btn-shop"><i className="icon-right"></i>{slide.link}</a>
               </div>
             </div>
           </div>
