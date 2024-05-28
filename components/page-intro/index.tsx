@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {EffectFade, Navigation} from 'swiper';
 import { useRouter } from 'next/router';
-import { link } from 'fs';
 
 SwiperCore.use([EffectFade, Navigation]);
 
