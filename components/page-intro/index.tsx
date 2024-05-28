@@ -13,7 +13,7 @@ const PageIntro = () => {
   //   };
 
   const slides = [
-    { id: 1, url: '/product/needle/en05s20RL', imgSrc: '/images/TKSLARGE1.webp' },
+    { id: 1, url: '/product/needle/en05s20RL', imgSrc: '/images/TKSLARGE1.jpg' },
     { id: 2, url: '/product/needle/cnc20RL', imgSrc: '/images/tattoo/HAWINK.webp' },
     { id: 3, url: '/product/needle/athekingssword20RL', imgSrc: '/images/PRINTER.webp' }
   ];
