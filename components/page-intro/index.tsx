@@ -25,7 +25,6 @@ const PageIntro = () => {
   return (
 
     <section className="page-intro"> 
-
       <Swiper navigation effect="coverflow" loop={true} className="swiper-wrapper">
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
