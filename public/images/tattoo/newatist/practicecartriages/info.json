@@ -1,24 +1,36 @@
 
 {
-  "title": "60PCS Chenqun Tattoo Marker Pen", 
-  "price": "NZ$3.80",
-  "desc": "TD01 surgical skin marker dual tips 1.0 and 0.5mm/nDirect Manufacturer, Tondaus ower, CE, FDA, ISO13485,CFDA approved/nresistance to Chlorhexidine surgical preparation solution (CHG: Chlorhexidine Gluconate)/nTD01 is the same as T3023 part from the different color of marker barrels./nSpecifications/ntwin tips, 0.5mm and 1.0mm/nlong shelf life time/nGerman ink/ncan be extro fine",
+  "title": "RL Disposable Tattoo Needle Yellow Dragonfly Tattoo Cartridges 1PCS", 
+  "price": "From NZ$0.90",
+  "desc": "Artist tattoo one-piece needle can be used for the original tattoo machine pen, needle features mold made of imported ABS material, tattoo needle configuration, tattooing without noise, is all tattoo artist Good tattoo needle. ",
  "price2": [
     {
-      "category": "Large17mm*14mm",
-      "price": "NZ$28.90"
+      "category": "1201RL",
+      "price": "NZ$0.90"
     },
     {
-      "category": "Large17mm*14mm",
-      "price": "NZ$28.90"
+      "category": "1203RL",
+      "price": "NZ$0.90"
     },
     {
-      "category": "Medium14mm*12mm",
-      "price": "NZ$27.90"
+      "category": "1205RL",
+      "price": "NZ$0.90"
     },
     {
-      "category": "",
-      "price": "NZ$26.90"
+      "category": "1207RL",
+      "price": "NZ$1.00"
+    },
+   {
+      "category": "1209RL",
+      "price": "NZ$1.00"
+    },
+    {
+      "category": "1211RL",
+      "price": "NZ$1.10"
+    },
+   {
+      "category": "1214RL",
+      "price": "NZ$1.10"
     }
   ]
 }
