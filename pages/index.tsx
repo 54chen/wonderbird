@@ -62,21 +62,21 @@ const IndexPage = ({featuredProducts}:{featuredProducts:ProductLists}) => {
           <article style={{backgroundImage: 'url(/images/featured-1.jpg)'}} className="featured-item featured-item-large">
             <div className="featured-item__content">
               <h3>Special offers</h3>
-              <a href="/special_offers" className="btn btn--rounded">Show products</a>
+              <a href="/product/specialoffer" className="btn btn--rounded">Show products</a>
             </div>
           </article>
           
           <article style={{backgroundImage: 'url(/images/featured-2.jpg)'}} className="featured-item featured-item-small-first">
             <div className="featured-item__content">
               <h3>New products</h3>
-              <a href="/new_products" className="btn btn--rounded">More details</a>
+              <a href="/product/newproduct" className="btn btn--rounded">More details</a>
             </div>
           </article>
           
           <article style={{backgroundImage: 'url(/images/featured-3.jpg)'}} className="featured-item featured-item-small">
             <div className="featured-item__content">
-              <h3>support for/nnew tattoo artists</h3>
-              <a href="/else" className="btn btn--rounded">VIEW ALL</a>
+              <h3>support for<br/>new tattoo artists</h3>
+              <a href="/product/newatist" className="btn btn--rounded">VIEW ALL</a>
             </div>
           </article>
         </div>
