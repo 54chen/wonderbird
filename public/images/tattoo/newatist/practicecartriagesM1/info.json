@@ -1,0 +1,32 @@
+
+{
+  "title": "M1 Disposable Tattoo Needle Yellow Dragonfly Tattoo Cartridges 1PCS", 
+  "price": "From NZ$0.90",
+  "desc": "Artist tattoo one-piece needle can be used for the original tattoo machine pen, needle features mold made of imported ABS material, tattoo needle configuration, tattooing without noise, is all tattoo artist Good tattoo needle. ",
+ "price2": [
+   {
+      "category": "1205M1",
+      "price": "NZ$0.90"
+    },
+    {
+      "category": "1207M1",
+      "price": "NZ$1.00"
+    },
+   {
+      "category": "1209M1",
+      "price": "NZ$1.00"
+    },
+    {
+      "category": "1211M1",
+      "price": "NZ$1.10"
+    },
+   {
+      "category": "1213M1",
+      "price": "NZ$1.10"
+    },
+   {
+      "category": "1215M1",
+      "price": "NZ$1.10"
+    }
+  ]
+}
