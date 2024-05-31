@@ -1,0 +1,20 @@
+
+{
+  "title": "100pcs Nitrile Exam Gloves", 
+  "price": "NZ$13.94",
+  "desc": "100pcs 4/6/10Mil Nitrile Exam Gloves, Latex-Free & Powder-Free & Non-Sterile, Disposable Gloves, Can Be Used For Various Industrial, And Household Tasks, Cleaning, Janitorial, Cooking, Food Prep, Tattoo, Oil Change, Auto Repair, Mechanics",
+ "price2": [
+    {
+      "category": "4mil",
+      "price": "NZ$13.94"
+    },
+    {
+      "category": "6mil",
+      "price": "NZ$28.94"
+    },
+    {
+      "category": "10mil",
+      "price": "NZ$28.94"
+    }
+  ]
+}
