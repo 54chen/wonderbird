@@ -1,24 +1,40 @@
 
 {
-  "title": "60PCS Chenqun Tattoo Marker Pen", 
+  "title": "1PCS Marker Pen", 
   "price": "NZ$3.80",
-  "desc": "TD01 surgical skin marker dual tips 1.0 and 0.5mm/nDirect Manufacturer, Tondaus ower, CE, FDA, ISO13485,CFDA approved/nresistance to Chlorhexidine surgical preparation solution (CHG: Chlorhexidine Gluconate)/nTD01 is the same as T3023 part from the different color of marker barrels./nSpecifications/ntwin tips, 0.5mm and 1.0mm/nlong shelf life time/nGerman ink/ncan be extro fine",
+  "desc": "Production Description：/nProudly permanent ink marks on paper, plastic, metal and most other./nIntensely brilliant colors create eye-popping, vibrant impressions./nRemarkably resilient ink dries quickly and resists fading and water with AP certified./nEndlessly versatile fine point is prefect for countless use in the classroom, office, home and beyond",
  "price2": [
     {
-      "category": "Large17mm*14mm",
-      "price": "NZ$28.90"
+      "category": "Black",
+      "price": "NZ$3.80"
     },
     {
-      "category": "Large17mm*14mm",
-      "price": "NZ$28.90"
+      "category": "Red",
+      "price": "NZ$3.80"
     },
     {
-      "category": "Medium14mm*12mm",
-      "price": "NZ$27.90"
+      "category": "Blue",
+      "price": "NZ$3.80"
     },
     {
-      "category": "",
-      "price": "NZ$26.90"
+      "category": "Green",
+      "price": "NZ$3.80"
+    },
+    {
+      "category": "Pink",
+      "price": "NZ$3.80"
+    },
+    {
+      "category": "Orange",
+      "price": "NZ$3.80"
+    },
+    {
+      "category": "Purple",
+      "price": "NZ$3.80"
+    },
+    {
+      "category": "light green",
+      "price": "NZ$3.80"
     }
   ]
 }
