@@ -85,6 +85,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   
     const tattoos: ProductLists = dirs.map(({ category, pid }) => {
       const infoPath = path.join(dirPath, category, pid, 'info.json');
+      if (!fs.existsSync(infoPath)) {
+        return {} as ProductTypeList;
+      }
       const info = JSON.parse(fs.readFileSync(infoPath, 'utf-8'));
   
       const images = fs.readdirSync(path.join(dirPath, category, pid)).filter((file) =>
