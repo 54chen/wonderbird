@@ -37,8 +37,8 @@ const Footer = () => {
             </ul>
             <ul>
               <li>Contact</li>
-              <li><a href="#">store@uikit.com</a></li>
-              <li><a href="#">Hotline: +1 131 138 138</a></li>
+              <li><a href="#">wanghao2017117@gmail.com</a></li>
+              <li><a href="#">Hotline: +64 020 4167 7415</a></li>
             </ul>
           </div>
         </div>
@@ -46,7 +46,7 @@ const Footer = () => {
       
       <div className="site-footer__bottom">
         <div className="container">
-          <p>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
+          <p>DESIGN BY WONDERBIRD - © 2024. ALL RIGHTS RESERVED.</p>
         </div>
       </div>
     </footer>
