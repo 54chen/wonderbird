@@ -38,7 +38,7 @@ export const getStaticProps: GetStaticProps = async ({}) => {
       const info = JSON.parse(fs.readFileSync(infoPath, 'utf-8'));
   
       const images = fs.readdirSync(path.join(dirPath, category, pid)).filter((file) =>
-        file.endsWith('.jpg') || file.endsWith('.webp')
+        file.endsWith('.jpg') || file.endsWith('.webp') || file.endsWith('.jpeg')
       );
       const single: ProductTypeList = { id: pid, color: '', name: info.title, currentPrice: info.price, price: info.price, category: category, images: [`/images/tattoo/${category}/${pid}/${images[0]}`] };
       return single;
