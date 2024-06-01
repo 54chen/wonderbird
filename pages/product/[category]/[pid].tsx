@@ -66,7 +66,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const info: Info = JSON.parse(content);
 
   const images = fs.readdirSync(dirPath)
-    .filter(file => file.endsWith('.jpg') || file.endsWith('.webp') || file.endsWith('.png')) 
+    .filter(file => file.toLowerCase().endsWith('.jpg') || file.toLowerCase().endsWith('.webp') || file.toLowerCase().endsWith('.png') || file.toLowerCase().endsWith('.jpeg')) 
     .map(file => `/images/tattoo/${category}/${pid}/${file}`);
 
   info.images = images;
@@ -91,8 +91,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       const info = JSON.parse(fs.readFileSync(infoPath, 'utf-8'));
   
       const images = fs.readdirSync(path.join(dirPath, category, pid)).filter((file) =>
-        file.endsWith('.jpg') || file.endsWith('.webp') || file.endsWith('.jpeg')
-      );
+        file.toLowerCase().endsWith('.jpg') || file.toLowerCase().endsWith('.webp') || file.toLowerCase().endsWith('.png') || file.toLowerCase().endsWith('.jpeg')
+    );
       const single: ProductTypeList = { id: pid, color: '', name: info.title, currentPrice: info.price, price: info.price, category: category, images: [`/images/tattoo/${category}/${pid}/${images[0]}`] };
       return single;
     });
