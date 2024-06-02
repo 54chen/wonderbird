@@ -22,7 +22,7 @@ const Footer = () => {
               <li>Shopping online</li>
               <li><a href="#">Order Status</a></li>
               <li><a href="#">Shipping and Delivery</a></li>
-              <li><a href="#">Returns</a></li>
+              <li><a href="/returns">Returns</a></li>
               <li><a href="#">Payment options</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
