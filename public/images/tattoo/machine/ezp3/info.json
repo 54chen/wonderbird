@@ -1,6 +1,74 @@
 
 {
   "title": "EZ P3 Pro Wireless Battery Tattoo Pen Machine", 
-  "price": "NZ$348.35 EXGST",
-  "desc": "P3 Pro Wireless Tattoo Machine, the latest cutting-edge creation by EZ. This intelligently designed device features a powerful smart chip, offering exceptional performance and precision.The P3 Pro Wireless Tattoo Machine allows for adjustable stroke, empowering tattoo artists to fine-tune their creations to meet diverse tattooing needs. This adjustable stroke capability makes the P3 Pro an ideal choice for various tattoo styles and techniques./nAdditionally, this machine comes with Bluetooth connectivity, enabling seamless connection to a dedicated mobile application APP. Through this convenient feature, tattoo artists can effortlessly control and adjust the settings of the P3 Pro, delivering a personalized tattooing experience. /nP3 Pro Wireless Tattoo Machine pays attention to design and quality. Constructed with durable materials, it boasts a robust and reliable structure, ensuring stability and longevity during extended tattooing sessions. The ergonomically designed body provides a comfortable grip, minimizing fatigue and allowing for focused and precise work during long tattooing sessions.Whether you're a professional tattoo artist or an enthusiast, the P3 Pro is guaranteed to deliver an exceptional tattooing experience."
+  "price": "NZ$348.35",
+  "desc": "P3 Pro Wireless Tattoo Machine, the latest cutting-edge creation by EZ. This intelligently designed device features a powerful smart chip, offering exceptional performance and precision.The P3 Pro Wireless Tattoo Machine allows for adjustable stroke, empowering tattoo artists to fine-tune their creations to meet diverse tattooing needs. This adjustable stroke capability makes the P3 Pro an ideal choice for various tattoo styles and techniques./nAdditionally, this machine comes with Bluetooth connectivity, enabling seamless connection to a dedicated mobile application APP. Through this convenient feature, tattoo artists can effortlessly control and adjust the settings of the P3 Pro, delivering a personalized tattooing experience. /nP3 Pro Wireless Tattoo Machine pays attention to design and quality. Constructed with durable materials, it boasts a robust and reliable structure, ensuring stability and longevity during extended tattooing sessions. The ergonomically designed body provides a comfortable grip, minimizing fatigue and allowing for focused and precise work during long tattooing sessions.Whether you're a professional tattoo artist or an enthusiast, the P3 Pro is guaranteed to deliver an exceptional tattooing experience.",
+"price2": [
+  {
+    "category": "P3 Pro-Gloss Black",
+    "price": "NZ$345.35"
+  },
+  {
+    "category": "P3 Pro-Gloss Red",
+    "price": "NZ$348.35"
+  },
+  {
+    "category": "P3 Pro-Gloss Golden",
+    "price": "NZ$348.35"
+  },
+  {
+    "category": "P3 Pro-Gloss Gray",
+    "price": "NZ$348.35"
+  }, 
+ {
+    "category": "P3 Pro-Matte Black",
+    "price": "NZ$348.35"
+  },
+  {
+    "category": "P3 Pro-Matte Red",
+    "price": "NZ$348.35"
+  },
+  {
+    "category": "P3 Pro-Matte Golden",
+    "price": "NZ$348.35"
+  },
+  {
+    "category": "P3 Pro-Matte Gry",
+    "price": "NZ$348.35"
+  },
+  {
+    "category": "P3 Pro-Matte BlackX2Power",
+    "price": "NZ$448.35"
+  }, 
+  {
+    "category": "P3 Pro-Gloss RedX2Power",
+    "price": "NZ$448.35"
+  },
+  {
+    "category": "P3 Pro-Gloss GoldenX2Power",
+    "price": "NZ$448.35"
+  },
+  {
+    "category": "P3 Pro-Gloss GrayX2Power",
+    "price": "NZ$448.35"
+  }, 
+ {
+    "category": "P3 Pro-Matte BlackX2Power",
+    "price": "NZ$448.35"
+  },
+  {
+    "category": "P3 Pro-Matte RedX2Power",
+    "price": "NZ$448.35"
+  },
+  {
+    "category": "P3 Pro-Matte GoldenX2Power",
+    "price": "NZ$448.35"
+  },
+  {
+    "category": "P3 Pro-Matte GryX2Power",
+    "price": "NZ$448.35"
+  }
+]
 }
+
+
