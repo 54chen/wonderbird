@@ -1,19 +1,31 @@
 {
-  "title": "Disposable Tattoo Ink Pigment Cups 1000pcs", 
-  "price": "NZ$20.90",
-  "desc": "Features/nMade of high-quality plastic. It is waterproof, reusable, and durable./nSuitable for professional use or home use./nExcellent using to hold pigment or ink for tattoo or microblading./nEasy to clean and store./nDesigned with a unique base and wide cup edge prevents inks from spilling./nWorthwhile. 1000pcs Disposable tattoo ink cups. Generous amounts are enough to use for a long time./nSize: Large17mm*14mm, Medium14mm*12mm, Small11mm*10mm.",
+  "title": "Biodegradable Tattoo Ink Cups", 
+  "price": "NZ$6.80",
+  "desc": "Description/nEco-Friendly Ink Caps/nHelps maintain a safe, Hygienic work environment./nDisposable ink caps are made from natural wheat straw fiber and PP material./nSize：S,M,L,XL/nIt’s highly-biodegradable and recyclable, safe for people and the environment.",
   "price2": [
   {
-      "category": "Small11mm*10mm",
-      "price": "NZ$20.90"
+      "category": "200PCS S 10mm",
+      "price": "NZ$6.80"
     }, 
    {
-      "category": "Medium14mm*12mm",
-      "price": "NZ$22.90"
+      "category": "200PCS M 12mm",
+      "price": "NZ$7.10"
     },
     {
-      "category": "Large17mm*14mm",
-      "price": "NZ$24.90"
+      "category": "200PCS L 15mm",
+      "price": "NZ$7.60"
+    } ,
+     {
+      "category": "1000PCS S 10mm",
+      "price": "NZ$29.80"
+    }, 
+   {
+      "category": "1000PCS M 12mm",
+      "price": "NZ$29.80"
+    },
+    {
+      "category": "500PCS L 15mm",
+      "price": "NZ$18.30"
     }
   ]
 }
