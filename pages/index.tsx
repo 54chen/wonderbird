@@ -64,14 +64,14 @@ const IndexPage = ({featuredProducts}:{featuredProducts:ProductLists}) => {
         <div className="container">
           <article style={{backgroundImage: 'url(/images/featured-1.jpg)'}} className="featured-item featured-item-large">
             <div className="featured-item__content">
-              <h3>Special offers</h3>
+              <h3>Special<br/>Offers</h3>
               <a href="/product/specialoffer" className="btn btn--rounded">Show products</a>
             </div>
           </article>
           
           <article style={{backgroundImage: 'url(/images/featured-2.jpg)'}} className="featured-item featured-item-small-first">
             <div className="featured-item__content">
-              <h3>New products</h3>
+              <h3>New<br/>Products</h3>
               <a href="/product/newproduct" className="btn btn--rounded">More details</a>
             </div>
           </article>
