@@ -78,7 +78,7 @@ const IndexPage = ({featuredProducts}:{featuredProducts:ProductLists}) => {
           
           <article style={{backgroundImage: 'url(/images/featured-3.jpg)'}} className="featured-item featured-item-small">
             <div className="featured-item__content">
-              <h3>support for<br/>new tattoo artists</h3>
+              <h3>tattoo<br/>furniture</h3>
               <a href="/product/newatist" className="btn btn--rounded">VIEW ALL</a>
             </div>
           </article>
