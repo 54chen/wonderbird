@@ -13,7 +13,7 @@ const PageIntro = () => {
   //   };
 
   const slides = [
-    { id: 1, url: '/product/needle/athekingssword20RL', imgSrc: '/images/TKSLARGE1.jpg', desc: 'Special New Arrival',link: 'Shop Now' },
+    { id: 1, url: '/product/needle/cnc20RL', imgSrc: '/images/TKSLARGE1.jpg', desc: 'Special New Arrival',link: 'Shop Now' },
     { id: 2, url: '/product/ink/hawinksblack', imgSrc: '/images/index-1/s2.jpg', desc: 'INK EXCELLENCE\nART PERFECTION', link:'SHOP NOW' },
     { id: 3, url: '/product/supply/miniprinter', imgSrc: '/images/PRINTER.jpg', desc: '', link:'' }  
 ];
