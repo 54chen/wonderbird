@@ -1,6 +1,21 @@
 
 {
   "title": "100 Pcs Two Blade Razor Disposable Razor", 
-  "price": "NZ$14.20",
-  "desc": "Features:/n1. Double Blade Design, Thin And Sharp, Clean Hair Removal./n2. Plastic Non-Slip Handle For Increased Grip./n3. Disposable, Safe And Hygienic To Prevent Cross Infection./n4. Suitable For Tattoos To Remove Local Hair On The Back Of The Arms And Other Parts./n5. Disposable Head Cover, Safe To Store And Prevent Scratches."
- }
+  "price": "NZ$17.20",
+  "desc": "Features:/n1. Double Blade Design, Thin And Sharp, Clean Hair Removal./n2. Plastic Non-Slip Handle For Increased Grip./n3. Disposable, Safe And Hygienic To Prevent Cross Infection./n4. Suitable For Tattoos To Remove Local Hair On The Back Of The Arms And Other Parts./n5. Disposable Head Cover, Safe To Store And Prevent Scratches.",
+  "price2": [
+    {
+      "category": "Black",
+      "price": "NZ$17.20"
+    },
+    {
+      "category": "Blue",
+      "price": "NZ$21.70"
+    },
+    {
+      "category": "White",
+      "price": "NZ$21.70"
+    }
+  ]
+}
+
