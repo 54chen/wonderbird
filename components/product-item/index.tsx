@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import { ProductTypeList } from 'types';
 
-const ProductItem = ({ discount, images, id, name, price, currentPrice, category }: ProductTypeList) => {
+const ProductItem = ({ discount, images, id, name, price, currentPrice, category, simple }: ProductTypeList) => {
 
 
   return (
     <div className="product-item">
       <div className="product__image">
-
-        <Link href={`/product/${category}/${id}`}>
+      
+        <Link href={simple ? `/product/${id}` : `/product/${category}/${id}`}>
           <a>
             <img src={images ? images[0] : ''} alt="product" />
             {discount && 

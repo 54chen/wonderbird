@@ -47,6 +47,7 @@ export type ProductTypeList = {
   discount?: string;
   currentPrice?: number;
   category: string;
+  simple?: boolean;
 }
 
 export type ProductLists = ProductTypeList[]

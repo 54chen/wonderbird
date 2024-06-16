@@ -23,7 +23,8 @@ const ProductsContent = ({category, data}:{category: string, data: ProductLists}
               currentPrice={item.currentPrice}
               key={item.id}
               images={item.images} 
-              category={category}
+              category={category !==''?category:item.category}
+              simple={item.simple}
             />
           ))}
         </section>
