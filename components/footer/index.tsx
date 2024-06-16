@@ -9,7 +9,7 @@ const Footer = () => {
             <h6><Logo /></h6>
             <p>Slogon</p>
             <ul className="site-footer__social-networks">
-              <li><a href="https://www.facebook.com/"><i className="icon-facebook"></i></a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61558841195713"><i className="icon-facebook"></i></a></li>
               <li><a href="#"><i className="icon-twitter"></i></a></li>
               <li><a href="#"><i className="icon-linkedin"></i></a></li>
               <li><a href="#"><i className="icon-instagram"></i></a></li>
