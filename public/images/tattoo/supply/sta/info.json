@@ -4,24 +4,35 @@
   "price": "NZ$7.97",
   "desc": "For Occupational Work And Industrial Use, Black, White,Sky Blue,Ice Blue, Pink, Powder Free And Latex Touch Screen Disposable Non Sterile Nitrile Exam Gloves.",
  "price2": [
-    {
-      "category": "Sky blue",
+  {
+    "category": "S* blue",
+    "price": "NZ$7.97"
+  },
+  {
+    "category": "S* Black",
+    "price": "NZ$7.97"
+  }, {
+      "category": "M* blue",
       "price": "NZ$7.97"
     },
     {
-      "category": "Black",
+      "category": "M* Black",
       "price": "NZ$7.97"
     },
     {
-      "category": "Ice Blue",
+      "category": "L* Blue",
       "price": "NZ$7.97"
     },
     {
-      "category": "White",
+      "category": "L* Black",
+      "price": "NZ$7.97"
+    }, 
+   {
+      "category": "XL* blue",
       "price": "NZ$7.97"
     },
     {
-      "category": "Pink",
+      "category": "XL* Black",
       "price": "NZ$7.97"
     }
   ]
