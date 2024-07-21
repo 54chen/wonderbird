@@ -71,9 +71,80 @@ html,body{overflow-x:hidden !important}
   box-sizing: border-box;
 }
 
+.body-white {
+  background-color: #FFF;
+}
+.body-black {
+  background-color: #000;
+}
+
+.body-black h1{
+  color: #FFF;
+
+}
+.intro {
+  fill: white;
+  width: 200px;
+  margin: auto;
+  height: 200px;
+  transform: translateY(-300px); 
+}
+.intro svg {
+  width: 80%;
+}
+.logo-white {
+  fill: white;
+  width: 50%;
+  transform: translateY(-100px); 
+}
+.logo-white svg {
+  width: 80%;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 使父容器充满整个视窗高度 */
+  position: relative;
+}
+
+.glow.square {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 可以根据需要调整阴影 */
+  margin: 0 20px; /* 调整左右间距以适应布局 */
+}
+
+.logo-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 650px; /* 根据需要调整宽度 */
+  height: 650px; /* 根据需要调整高度 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 可以根据需要调整阴影 */
+  transform: translateY(-100px); 
+}
+
+.glow {
+  display: inline-block;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.glow:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+.logo-white svg {
+  fill: white;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
+  transition: filter 0.1s;
+}
+
+
 body {
   box-sizing: border-box;
-  background-color: white;
   font-family: var(--main-font);
   color: var(--color-text);
   font-size: 16px;
@@ -145,6 +216,10 @@ h1,h2,h3,h4,h5 {
   }
 }
 
+.app-black {
+  background-color: #000;
+  color: #FFF;
+}
 .main-page {
   padding-top: 65px;
   @include breakpoint(phone) {

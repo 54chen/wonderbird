@@ -3,25 +3,26 @@ import Document, { Html, Head, Main, NextScript, DocumentInitialProps, DocumentC
 import { GA_TRACKING_ID } from '../utils/gtag';
 
 interface DocumentProps extends DocumentInitialProps {
-  isProduction: boolean
+  isProduction: boolean, pathname: string
 }
 
 export default class CustomDocument extends Document<DocumentProps> {
   static async getInitialProps(ctx: DocumentContext): Promise<DocumentProps> {
     const initialProps = await Document.getInitialProps(ctx)
-
+    
     // Check if in production
     const isProduction = process.env.NODE_ENV === 'production'
 
     return {
       ...initialProps,
       isProduction,
+      pathname: ctx.pathname 
     }
   }
 
   render() {
-    const { isProduction } = this.props
-
+    const { isProduction, pathname } = this.props
+    console.log(pathname)
     return (
       <Html lang="en">
         <Head>
@@ -50,7 +51,7 @@ export default class CustomDocument extends Document<DocumentProps> {
             </Fragment>
           )}
         </Head>
-        <body>
+        <body className={pathname=="/"?"body-black":"body-white"}>
           <Main />
           <NextScript />
         </body>
