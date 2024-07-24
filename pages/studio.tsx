@@ -13,12 +13,47 @@ import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import photos from "./photos";
 import { useEffect, useState } from 'react';
 import Bird from 'assets/icons/Bird';
 import Link from 'next/link';
+import fs from 'fs';
+import path from 'path';
+import { GetStaticProps } from 'next';
+import type { Photo } from "react-photo-album";
 
-const Page = () => {
+
+export const getStaticProps: GetStaticProps = async () => {
+  const categoryDir = path.join(process.cwd(), 'public/images/tatoostudio/design/big/');
+  const images = fs.readdirSync(categoryDir).filter((file) =>
+    file.toLowerCase().endsWith('.jpg') || file.toLowerCase().endsWith('.webp') || file.toLowerCase().endsWith('.png') || file.toLowerCase().endsWith('.jpeg')
+  );
+  return {
+    props: {
+      images,
+    },
+  };
+};
+
+const assetLink = (asset: string, width: number) => {
+  return `/images/tatoostudio/design/big/` + asset;
+
+}
+const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
+
+const Page = ({images}: {images: string[]}) => {
+  const photos = images.map(
+      (asset) =>
+        ({
+          src: assetLink(asset, 480),
+          width: 480,
+          height: 640,
+          srcSet: breakpoints.map((breakpoint) => ({
+            src: assetLink(asset, breakpoint),
+            width: breakpoint,
+            height: Math.round((640 / 480) * breakpoint),
+          })),
+        }) as Photo,
+    );
 
   const [index, setIndex] = useState(-1);
   useEffect(() => {
@@ -68,46 +103,32 @@ const Page = () => {
         <div className="container">
 
           <h1>&nbsp;</h1>
-          <b>Tattooist</b>
+          <b style={{ paddingLeft: '30px'}}>About the Artist</b>
           <div style={{ padding: '20px', lineHeight: '1.6' }}>
             <div style={{ float: 'left', marginRight: '20px' }}>
               <Image
-                src="/images/hao.webp" // 替换为您的图片路径
+                src="/images/tatoostudio/artist/WechatIMG642.jpg" // 替换为您的图片路径
                 alt="Tattoo Artist Hao"
                 width={300} // 调整宽度
                 height={300} // 调整高度
                 style={{ borderRadius: '8px' }}
               />
             </div>
-            <b>Tattoo Artist Hao</b>
-            <p>
-              Hao is a renowned tattoo artist celebrated for his exceptional craftsmanship and artistic vision.
-              With over a decade of experience in the tattoo industry, Hao has honed his skills to perfection,
-              specializing in intricate designs and custom artwork that resonates with his clients' individuality.
-            </p>
-            <p>
-              Hao's work is characterized by a unique blend of traditional and contemporary styles, seamlessly
-              integrating bold lines, delicate shading, and vibrant colors. His keen attention to detail and
-              commitment to using high-quality materials ensure that each tattoo is a masterpiece, designed to
-              last a lifetime.
-            </p>
-            <p>
-              Clients from all over the world seek Hao's expertise, drawn by his reputation for creating personalized
-              tattoos that not only adorn the skin but also tell a meaningful story. Whether it's a small, delicate piece
-              or a large, complex design, Hao approaches every project with the same passion and dedication, striving to
-              exceed his clients' expectations.
-            </p>
-            <p>
-              Beyond his technical skills, Hao is known for his warm and approachable demeanor. He takes the time to
-              understand each client's vision and collaborates closely with them throughout the design process,
-              ensuring a comfortable and enjoyable experience.
-            </p>
-            <p>
-              As a tattoo artist, Hao continues to push the boundaries of creativity, constantly exploring new techniques
-              and styles. His work has been featured in numerous tattoo conventions and publications, earning him a
-              well-deserved place among the top tattoo artists in the industry.
-            </p>
-          </div>
+            <p>Welcome to my world of ink and artistry! My name is Hao Wang, and I am a passionate tattoo artist with a rich background in sculpting and design. Before dedicating my craft to the world of tattoos, I honed my skills as a sculptor at the renowned Weta Workshop.</p>
+<p>&nbsp;</p>
+<b>A Journey Through Sculpting</b>
+<p>My journey as an artist began with sculpting, where I was privileged to work at <a className='custom-link' href="https://www.wetanz.com/us/artists/hao-wang" target='_blank'>Weta Workshop</a>, one of the most prestigious special effects and prop companies in the world. During my time there, I had the incredible opportunity to create detailed figures for Netflix's acclaimed series, Dark Crystal: Age of Resistance. Each piece was crafted with meticulous attention to detail and a deep appreciation for the art of storytelling. I'm proud to say that these figures were immensely popular and sold out, a testament to the dedication and passion I poured into each creation.
+</p><p>&nbsp;</p>
+<b>Transition to Tattooing</b>
+<p>Transitioning from sculpting to tattooing was a natural progression for me. The skills and precision required in sculpting seamlessly translated into my tattoo work. I bring the same level of dedication, artistry, and attention to detail to every tattoo I design. Each piece is a unique work of art, tailored to tell the story and capture the essence of my clients' visions.
+</p><p>&nbsp;</p>
+
+<b>My Artistic Philosophy</b>
+<p>In both sculpting and tattooing, my philosophy remains the same: to create art that resonates deeply with the individual, telling their story in a way that is both beautiful and meaningful. Whether it's a small, intricate design or a large, elaborate piece, I approach each tattoo with the same passion and commitment to excellence.
+</p><p>&nbsp;</p>
+
+<p>Thank you for considering me for your next tattoo. I look forward to collaborating with you to create a piece of art that you'll cherish forever.
+</p>          </div>
 
 
           <PhotoAlbum photos={photos} layout="rows" targetRowHeight={150} onClick={({ index }) => setIndex(index)} />
