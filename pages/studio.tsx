@@ -20,13 +20,26 @@ import fs from 'fs';
 import path from 'path';
 import { GetStaticProps } from 'next';
 import type { Photo } from "react-photo-album";
-
+import sizeOf from 'image-size';
 
 export const getStaticProps: GetStaticProps = async () => {
-  const categoryDir = path.join(process.cwd(), 'public/images/tatoostudio/design/big/');
-  const images = fs.readdirSync(categoryDir).filter((file) =>
+  const categoryDir = path.join(process.cwd(), 'public/images/tatoostudio/artist/haowang/work2');
+  const imageFiles = fs.readdirSync(categoryDir).filter((file) =>
     file.toLowerCase().endsWith('.jpg') || file.toLowerCase().endsWith('.webp') || file.toLowerCase().endsWith('.png') || file.toLowerCase().endsWith('.jpeg')
   );
+
+  const images = await Promise.all(
+    imageFiles.map(async (file) => {
+      const filePath = path.join(categoryDir, file);
+      const dimensions = sizeOf(filePath);
+      return {
+        src: file,
+        width: dimensions.width,
+        height: dimensions.height,
+        };
+    })
+  );
+
   return {
     props: {
       images,
@@ -34,23 +47,27 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
+
 const assetLink = (asset: string, width: number) => {
-  return `/images/tatoostudio/design/big/` + asset;
+  return `/images/tatoostudio/artist/haowang/work2/` + asset;
 
 }
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
-const Page = ({images}: {images: string[]}) => {
+const Page = ({images}: {images: {src: string;
+  width: number | undefined;
+  height: number | undefined;}[]}) => {
+    
   const photos = images.map(
-      (asset) =>
+      ({src, width, height}) =>
         ({
-          src: assetLink(asset, 480),
-          width: 480,
-          height: 640,
+          src: assetLink(src, width!),
+          width,
+          height,
           srcSet: breakpoints.map((breakpoint) => ({
-            src: assetLink(asset, breakpoint),
+            src: assetLink(src, breakpoint),
             width: breakpoint,
-            height: Math.round((640 / 480) * breakpoint),
+            height: Math.round((width! / height!) * breakpoint),
           })),
         }) as Photo,
     );
@@ -109,8 +126,8 @@ const Page = ({images}: {images: string[]}) => {
               <Image
                 src="/images/tatoostudio/artist/WechatIMG642.jpg" // 替换为您的图片路径
                 alt="Tattoo Artist Hao"
-                width={300} // 调整宽度
-                height={300} // 调整高度
+                width={310} // 调整宽度
+                height={200} // 调整高度
                 style={{ borderRadius: '8px' }}
               />
             </div>
