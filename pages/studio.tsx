@@ -14,7 +14,7 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import { useEffect, useState } from 'react';
-import Bird from 'assets/icons/Bird';
+import Bird from 'assets/icons/bird';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
