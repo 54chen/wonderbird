@@ -48,7 +48,7 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 
-const assetLink = (asset: string, width: number) => {
+const assetLink = (asset: string, _width: number) => {
   return `/images/tatoostudio/artist/haowang/work2/` + asset;
 
 }

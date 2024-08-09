@@ -1,12 +1,4 @@
 import Layout from '../layouts/Main';
-import PageIntro from '../components/page-intro';
-import ProductsFeatured from '../components/products-featured';
-import Footer from '../components/footer';
-import Subscribe from '../components/subscribe';
-import { GetStaticProps } from 'next';
-import SupplyPage from './supply';
-import fs from 'fs';
-import path from 'path';
 import Bird from '../assets/icons/Bird';
 import { useEffect } from 'react';
 import Image from 'next/image';
