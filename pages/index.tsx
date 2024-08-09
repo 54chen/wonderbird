@@ -1,5 +1,5 @@
 import Layout from '../layouts/Main';
-import Bird from '../assets/icons/Bird';
+import Bird from '../assets/icons/Bird/index.js';
 import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
