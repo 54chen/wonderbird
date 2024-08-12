@@ -14,18 +14,6 @@
     {
       "category": "200PCS L 15mm",
       "price": "NZ$9.20"
-    } ,
-     {
-      "category": "1000PCS S 10mm",
-      "price": "NZ$29.80"
-    }, 
-   {
-      "category": "1000PCS M 12mm",
-      "price": "NZ$29.80"
-    },
-    {
-      "category": "500PCS L 15mm",
-      "price": "NZ$18.30"
-    }
+    } 
   ]
 }
