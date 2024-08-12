@@ -13,7 +13,7 @@ type HeaderType = {
 const Header = ({ isErrorPage }: HeaderType) => {
   const router = useRouter();
   // const { cartItems } = useSelector((state: RootState)  => state.cart);
-  const arrayPaths = ['/'];
+  const arrayPaths = ['/supply'];
 
   const [onTop, setOnTop] = useState((!arrayPaths.includes(router.pathname) || isErrorPage) ? false : true);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,7 +56,10 @@ const Header = ({ isErrorPage }: HeaderType) => {
     <header className={`site-header ${!onTop ? 'site-header--fixed' : ''}`}>
       <div className="container">
         <Link href="/">
-          <a><h1 className="site-logo"><Logo />Tattoo Supply</h1></a>
+          <a><h1 className="site-logo"><Logo /></h1></a>
+        </Link>
+        <Link href="/supply">
+          <a><h1 className="site-logo">Tattoo Supply</h1></a>
         </Link>
         <nav ref={navRef} className={`site-nav ${menuOpen ? 'site-nav--open' : ''}`}>
           <Link href="/product/machine">
