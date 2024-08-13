@@ -7,7 +7,7 @@ import { ProductLists, ProductTypeList } from 'types';
 import { GetStaticProps } from 'next';
 import ProductsContent from 'components/products-content';
 
-const params = ['needle/cnc20HRL','needle/cnc20M1','needle/cnc20RL','needle/cnc20RLT','needle/cnc20RM','needle/cnc20RS'];
+const params = ['needle/cnc20M1','needle/cnc20RL','needle/cnc20RM','needle/cnc20RS'];
 const content = `
 CNC dimension Tattoo Needle Cartridges
 
