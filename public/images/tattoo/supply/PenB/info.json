@@ -3,14 +3,7 @@
   "price": "NZ$2.50",
   "desc": "Production Description：/nProudly permanent ink marks on paper, plastic, metal and most other./nIntensely brilliant colors create eye-popping, vibrant impressions./nRemarkably resilient ink dries quickly and resists fading and water with AP certified./nEndlessly versatile fine point is prefect for countless use in the classroom, office, home and beyond",
  "price2": [
-    {
-      "category": "Black",
-      "price": "NZ$2.40"
-    },
-    {
-      "category": "Red",
-      "price": "NZ$2.50"
-    },
+  
     {
       "category": "Blue",
       "price": "NZ$2.80"
@@ -26,10 +19,6 @@
     {
       "category": "Orange",
       "price": "NZ$2.80"
-    },
-    {
-      "category": "Purple",
-      "price": "NZ$2.50"
     }
   ]
 }
