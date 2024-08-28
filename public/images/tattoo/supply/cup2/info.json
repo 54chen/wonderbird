@@ -1,19 +1,19 @@
 {
   "title": "Biodegradable Ink Cups", 
-  "price": "NZ$7.20",
+  "price": "NZ$9.00",
   "desc": "Description/nEco-Friendly Ink Caps/nHelps maintain a safe, Hygienic work environment./nDisposable ink caps are made from natural wheat straw fiber and PP material./nSize：S,M,L,XL/nIt’s highly-biodegradable and recyclable, safe for people and the environment.",
   "price2": [
   {
       "category": "200PCS S 10mm",
-      "price": "NZ$7.20"
+      "price": "NZ$9.00"
     }, 
    {
       "category": "200PCS M 12mm",
-      "price": "NZ$8.20"
+      "price": "NZ$9.00"
     },
     {
       "category": "200PCS L 15mm",
-      "price": "NZ$9.20"
+      "price": "NZ$9.00"
     } 
   ]
 }
