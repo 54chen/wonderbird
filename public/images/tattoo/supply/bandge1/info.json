@@ -1,12 +1,16 @@
 
 {
-  "title": "Tattoo Grip Bandage 6pcs/Box", 
-  "price": "NZ$4.20",
+  "title": "Tattoo Grip Bandage 1pcs", 
+  "price": "NZ$1.00",
   "desc": "Tattoo grip tape prevents blood, color splatter, and sweat during tattooing. These liquids can lead to bacterial infections. Use grip tape to protect your Solong tattoo pen from bacteria and ensure hygiene. Stay vigilant about cleanliness to avoid accidents caused by invisible bacteria in your daily life. Hygiene is paramount in the tattooing profession./nFeatures/nEach tape is individually packaged in a sterile plastic bag. Comes in a box of 6 tapes, 5cm*4.5m, with mixed colors./nTattoo grip wrap is made of special elastic fabric, offering softness, lightweight feel, anti-slip properties, waterproofing, breathability, and affordability./nTattoo grip tape offers excellent waterproofing, stretchability, and anti-skid properties, making it versatile for various applications. It can be used on rackets or any tool requiring waterproofing. The quality is exceptional./nParameters/nElastic Nonwoven Material/nSticks to themselves. Don’t have to stick to hair, skin, clothing, no pins and clips are needed./nLatex-free, because no latex induced allergic reactions/nSoft, breathable, and comfortable/nEasy hand tear, no scissors needed/nProvide light compression, apply properly to avoid cutting circulation/nStable and reliable cohesiveness/nGood tensile strength/nWater-resistant/nPackage/n1pc/bag, 6pcs/Box",
   "price2": [
     {
-      "category": "Colorful",
-      "price": "NZ$4.20"
+      "category": "Colorful*10pcs",
+      "price": "NZ$10.00"
+    },
+    {
+      "category": "Colorful*100pcs",
+      "price": "NZ$90.00"
     }
   ]
 }
