@@ -29,7 +29,7 @@ const Content = ({ product }: ProductContent) => {
           <h4>{ price }</h4>
           {product.discount &&
             <span>{ product.price }</span> 
-          } + GST
+          } 
         </div>
         {product.price2 &&
         <><br/><label htmlFor="category-select">Select Category:</label>&nbsp;
