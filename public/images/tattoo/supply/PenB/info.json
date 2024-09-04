@@ -1,24 +1,24 @@
 {
   "title": "1PCS Sharpie Marker Pen", 
-  "price": "NZ$2.00",
+  "price": "NZ$2.50",
   "desc": "Production Description：/nProudly permanent ink marks on paper, plastic, metal and most other./nIntensely brilliant colors create eye-popping, vibrant impressions./nRemarkably resilient ink dries quickly and resists fading and water with AP certified./nEndlessly versatile fine point is prefect for countless use in the classroom, office, home and beyond",
  "price2": [
   
     {
-      "category": "Blue*12pcs",
-      "price": "NZ$24.00"
+      "category": "Blue",
+      "price": "NZ$2.50"
     },
     {
-      "category": "Yellow12pcs",
-      "price": "NZ$24.00"
+      "category": "Yellow",
+      "price": "NZ$2.50"
     },
     {
-      "category": "Green12pcs",
-      "price": "NZ$24.00"
+      "category": "Green",
+      "price": "NZ$2.50"
     },
     {
-      "category": "Orange12pcs",
-      "price": "NZ$24.00"
+      "category": "Orange",
+      "price": "NZ$2.50"
     }
   ]
 }
